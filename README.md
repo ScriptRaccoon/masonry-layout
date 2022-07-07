@@ -27,7 +27,7 @@ The file `masonry.js` exports a function `applyMasonryLayout` with the following
 - **rowHeight**: the height of the CSS grid rows (in pixels) which is used to calculate the heights. Accordingly, smaller heights give more precision. Defaults to `20`.
 - **containsImages**: boolean which should be set to true if the items contain images. In that case, the tiny but useful package [imagesLoaded](https://imagesloaded.desandro.com/) needs to be installed. Defaults to `false`.
 
-In the CSS the container needs to have the `display: grid` property, the rest is optional. For example, the following styles make sure that the items have a spacing of 20px, at at least 300px wide and fill up the whole horizontal space.
+In the CSS the container needs to have the `display: grid` property, the rest is optional. For example, the following styles make sure that the items have a spacing of 20px, are at least 300px wide and fill up the whole horizontal space.
 
 ```
 .grid {
@@ -38,3 +38,9 @@ In the CSS the container needs to have the `display: grid` property, the rest is
 ```
 
 When you want to apply padding to the items, it is important to do this on the content wrappers, not the items themselves. Otherwise the height will not be calculcated correctly.
+
+```
+.content {
+    padding: 20px;
+}
+```
