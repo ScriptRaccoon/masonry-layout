@@ -2,6 +2,8 @@
 
 This is an implementation of a vertical Masonry layout as explained in the article [Masonry style layout with CSS Grid](https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb) by Andy Barefoot. It uses CSS grid and a bit of Vanilla JavaScript.
 
+Demo: https://masonrylayout.netlify.app
+
 ## Usage
 
 The HTML needs to have a grid container for the masonry items and each item needs to wrap around a content element.
