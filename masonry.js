@@ -23,14 +23,15 @@ export function applyMasonryLayout(options) {
                 .getComputedStyle(grid)
                 .getPropertyValue("grid-row-gap")
         );
-        const rowSpan = Math.ceil(
+        const numberOfRows = Math.ceil(
             (item
                 .querySelector(contentSelector)
                 .getBoundingClientRect().height +
                 rowGap) /
                 (rowHeight + rowGap)
         );
-        item.style.gridRowEnd = "span " + rowSpan;
+
+        item.style.gridRowEnd = "span " + numberOfRows;
     }
 
     function resizeAllGridItems() {
