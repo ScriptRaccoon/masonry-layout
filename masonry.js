@@ -9,10 +9,10 @@ export function applyMasonryLayout(options) {
         rowHeight = 20,
         containsImages = false,
     } = options;
-    if (!gridSelector) throw new Error("now grid selector provided");
-    if (!itemSelector) throw new Error("now item selector provided");
+    if (!gridSelector) throw new Error("no grid selector provided");
+    if (!itemSelector) throw new Error("no item selector provided");
     if (!contentSelector)
-        throw new Error("now content selector provided");
+        throw new Error("no content selector provided");
     const allItems = document.querySelectorAll(itemSelector);
     const grid = document.querySelector(gridSelector);
     grid.style.gridAutoRows = rowHeight + "px";
